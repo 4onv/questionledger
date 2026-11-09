@@ -1,0 +1,81 @@
+{
+  "version": 1,
+  "title": "Ship a private team notebook",
+  "description": "Synthetic demonstration · Explore how a changed fact affects a chain of answers.",
+  "facts": [
+    {
+      "id": "F1",
+      "label": "Draft storage",
+      "status": "confirmed",
+      "value": "Drafts stay in browser memory. There is no hosted sync."
+    },
+    {
+      "id": "F2",
+      "label": "Retention plan",
+      "status": "confirmed",
+      "value": "People retain notes by explicitly saving a JSON file."
+    },
+    {
+      "id": "F3",
+      "label": "Analytics decision",
+      "status": "pending",
+      "value": "The team has not decided whether to include anonymous metrics."
+    }
+  ],
+  "questions": [
+    {
+      "id": "Q1",
+      "parentId": null,
+      "prompt": "Where should draft notes live?",
+      "dependsOn": [
+        "F1"
+      ],
+      "answer": {
+        "text": "Keep drafts in this browser tab, with no account or hosted storage.",
+        "reviewedAgainst": "f5ec26b98f0c18d93b316c0f4667b148cfca261f60570d8d69148acad40a321e"
+      }
+    },
+    {
+      "id": "Q2",
+      "parentId": "Q1",
+      "prompt": "How will people retain their notes?",
+      "dependsOn": [
+        "F2"
+      ],
+      "answer": {
+        "text": "Offer a visible Save JSON button and remind people to save before closing.",
+        "reviewedAgainst": "9ece16efa45ade6a484541de37982dad5dc8e55f53611ffd1b5b2c02174c6ea7"
+      }
+    },
+    {
+      "id": "Q3",
+      "parentId": "Q2",
+      "prompt": "What should an exported notebook include?",
+      "dependsOn": [],
+      "answer": {
+        "text": "Include stable question IDs, parent links, recorded facts and review fingerprints.",
+        "reviewedAgainst": "9a6e6708d8fed62da75d3f429a06e18f93f892ffe02d8290ddcb1561b9cdd720"
+      }
+    },
+    {
+      "id": "Q4",
+      "parentId": null,
+      "prompt": "Should analytics ship in the first release?",
+      "dependsOn": [
+        "F3"
+      ],
+      "answer": {
+        "text": "Proposal: leave analytics out until the team decides.",
+        "reviewedAgainst": null
+      }
+    },
+    {
+      "id": "Q5",
+      "parentId": null,
+      "prompt": "What belongs in the release checklist?",
+      "dependsOn": [],
+      "answer": null
+    }
+  ],
+  "confirmation": null
+}

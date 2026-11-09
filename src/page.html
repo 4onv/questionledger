@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer"><meta http-equiv="Content-Security-Policy" content="%%CSP%%"><title>QuestionLedger — keep the question behind the answer</title><style>%%CSS%%</style></head>
+<body>
+<header class="topbar"><a class="brand" href="#workspace" aria-label="QuestionLedger workspace"><span class="mark">Q</span>QuestionLedger<span class="edition">LOCAL NOTEBOOK / 01</span></a><span class="offline"><i></i> Offline · no account</span></header>
+<main id="workspace">
+<section class="intro"><div><p class="eyebrow">KEEP THE QUESTION BEHIND THE ANSWER</p><h1 id="ledger-title"></h1><p id="ledger-description"></p></div><div class="intro-note"><strong>Facts change. Revisit the answer.</strong><p>Record dependencies explicitly. Review a branch when its context changes.</p></div></section>
+<div class="toolbar"><div class="tools"><button id="import-button" class="secondary">Open JSON</button><input type="file" id="import-file" accept=".json,application/json" hidden><button id="export-json" class="secondary">Save JSON</button><button id="export-md" class="secondary">Export Markdown</button></div><div class="tools"><button id="new-fact" class="secondary">+ Fact</button><button id="new-question" class="primary">+ Question</button></div></div>
+<p id="storage-note" class="small-note">Edits stay in this tab. Save JSON before closing to keep your work.</p>
+<p id="error" class="error" role="alert" hidden></p><p id="announcement" class="sr-only" role="status" aria-live="polite"></p>
+<section class="progress" aria-label="Notebook progress"><div><span id="count-reviewed">0</span><small>REVIEWED</small></div><div><span id="count-needs-review">0</span><small>NEED REVIEW</small></div><div><span id="count-blocked">0</span><small>BLOCKED</small></div><div><span id="count-unanswered">0</span><small>UNANSWERED</small></div><div class="confirmation"><p id="confirmation-status"></p><button id="confirm-button" class="primary">Confirm notebook</button></div></section>
+<div class="workspace">
+<aside class="panel questions-panel"><div class="panel-heading"><h2>Question trail</h2><span id="question-total"></span></div><p class="panel-hint">Stable IDs keep follow-ups in context.</p><nav id="question-tree" aria-label="Questions"></nav></aside>
+<section class="panel answer-panel" aria-label="Selected question"><div id="question-detail"></div></section>
+<aside class="panel facts-panel"><div class="panel-heading"><h2>Recorded facts</h2><span id="fact-total"></span></div><p class="panel-hint">Only declared dependencies are tracked.</p><div id="fact-list"></div></aside>
+</div>
+<footer><p><strong>Structural review, human judgment.</strong> A confirmed notebook means its recorded questions and facts are current. It does not verify truth, infer missing dependencies, identify an approver or authorize an agent to act.</p><p>QuestionLedger 0.1.0 · MIT · Files stay local</p></footer>
+</main>
+<dialog id="question-dialog"><form id="question-form"><div class="dialog-title"><h2>Add a question</h2><button type="button" class="close-dialog secondary" aria-label="Close add question">Close</button></div><label>Question<textarea id="new-prompt" required maxlength="4000" rows="4"></textarea></label><label>Follow-up to<select id="new-parent"></select></label><p class="small-note">A new stable ID is assigned. Add fact dependencies in the question editor.</p><button class="primary" type="submit">Add question</button></form></dialog>
+<dialog id="fact-dialog"><form id="fact-form"><div class="dialog-title"><h2>Add a fact</h2><button type="button" class="close-dialog secondary" aria-label="Close add fact">Close</button></div><label>Fact label<input id="new-label" required maxlength="200"></label><label>Recorded value<textarea id="new-value" maxlength="8000" rows="4"></textarea></label><label>Status<select id="new-status"><option value="pending">Pending — needs investigation</option><option value="confirmed">Confirmed by you</option></select></label><button class="primary" type="submit">Add fact</button></form></dialog>
+<script type="application/json" id="initial-ledger">%%DATA%%</script><script>%%JS%%</script>
+</body></html>

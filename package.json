@@ -1,0 +1,19 @@
+{
+  "name": "@4onv/questionledger",
+  "version": "0.1.0",
+  "description": "Keep question context and review answers when declared facts change. An offline decision notebook.",
+  "type": "module",
+  "license": "MIT",
+  "engines": { "node": ">=22" },
+  "bin": { "questionledger": "bin/questionledger.js" },
+  "exports": { ".": "./src/index.js", "./core": "./src/core.js" },
+  "files": ["bin", "src", "examples", "docs", "README.md", "LICENSE"],
+  "repository": { "type": "git", "url": "https://github.com/4onv/questionledger.git" },
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "demo": "node scripts/build-demo.js",
+    "test:browser": "playwright test",
+    "check:package": "node scripts/check-package.js"
+  },
+  "devDependencies": { "@playwright/test": "1.65.0" }
+}

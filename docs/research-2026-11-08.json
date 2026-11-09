@@ -1,0 +1,301 @@
+{
+  "schemaVersion": 1,
+  "researchDate": "2026-11-08",
+  "timezone": "America/Chicago",
+  "window": {
+    "startInclusive": "2026-11-08T06:00:00Z",
+    "endExclusive": "2026-11-09T06:00:00Z"
+  },
+  "observedAt": "2026-11-09T14:27:45Z",
+  "method": "Primary repository issue timestamps were verified through GitHub REST. Issues are individual reports, not validated general market demand. Competitor capabilities below are attributed to primary READMEs, not benchmarked. Ranking is a qualitative implementation judgement, not a predicted star count.",
+  "trendContext": {
+    "snapshotCapturedAt": "2026-11-09T14:23:58Z",
+    "source": "https://github.com/trending?since=daily",
+    "label": "Today's rolling Trending snapshot, not a historical snapshot for November 8.",
+    "repos": [
+      "anthropics/skills",
+      "meta/astryx",
+      "sherlock-project/sherlock",
+      "google-deepmind/mujoco",
+      "anthropics/claude-quickstarts",
+      "garrytan/gbrain",
+      "vercel-labs/agent-browser",
+      "ruvnet/RuView",
+      "ZhuLinsen/daily_stock_analysis",
+      "homeassistant-ai/ha-mcp",
+      "milind-soni/OpenMausBot"
+    ],
+    "priorSnapshot": "A retained November 7 snapshot included mattpocock/skills; no retained November 8 snapshot was available.",
+    "historicalGap": "No retained November 8 Trending snapshot. No historical star gains inferred from current rankings or totals."
+  },
+  "candidates": [
+    {
+      "rank": 1,
+      "id": "questionledger",
+      "name": "QuestionLedger (working name)",
+      "decision": "selected",
+      "concept": "A local editable question notebook for planning rounds: stable question IDs, parent context, explicit facts and prerequisites, pending-fact blockers, recorded answer acknowledgements and automatic review state when declared dependencies change.",
+      "criteria": {
+        "evidenceOfDemand": "Three concrete November 8 issues from two reporters describe reused references, premature recommendations and confirmations that bring new evidence. They are untriaged, with zero reactions at observation; this supports a specific problem, not broad proven demand.",
+        "distinctValue": "Interactive active-question workflow and deterministic dependency-revision review with a small schema. There is substantial overlap with existing ledgers, ADR tools, planning trees and Scrutable; differentiation is narrow usability and a runnable example.",
+        "easeOfDemo": "Open a local HTML app with visibly synthetic starter data. Answer questions, change a fact, observe dependent questions require review, then export JSON and Markdown. No account, API key, paid service or real repository data is needed.",
+        "realisticDiscoverability": "Searchable problem statement around planning-question context, pending facts and stale decisions; relevant planning, local-first, developer-tools and architecture-decision-record topics. A visual recorded demo is credible. Organic reach remains uncertain and no outreach is authorized."
+      },
+      "evidence": [
+        {
+          "url": "https://github.com/mattpocock/skills/issues/1398",
+          "apiUrl": "https://api.github.com/repos/mattpocock/skills/issues/1398",
+          "title": "grilling - lost context",
+          "createdAt": "2026-11-08T13:58:32Z",
+          "updatedAt": "2026-11-08T13:58:39Z",
+          "state": "open",
+          "comments": 0,
+          "reactions": 0,
+          "summary": "Reporter loses question context when follow-up rounds reuse numeric labels; asks for stable hierarchical references and original question context alongside answers.",
+          "kind": "previous-local-day issue",
+          "verification": "GitHub REST issue response via connected GitHub fetch",
+          "observedAt": "2026-11-09T14:27:45Z"
+        },
+        {
+          "url": "https://github.com/mattpocock/skills/issues/1401",
+          "apiUrl": "https://api.github.com/repos/mattpocock/skills/issues/1401",
+          "title": "grilling: a recommendation built on a pending fact gets retracted",
+          "createdAt": "2026-11-08T23:13:37Z",
+          "updatedAt": "2026-11-08T23:13:45Z",
+          "state": "open",
+          "comments": 0,
+          "reactions": 0,
+          "summary": "Reporter says three recommendations depended on codebase facts still under investigation and had to be retracted. Requests treating recommendation premises as dependencies and keeping affected recommendations provisional.",
+          "kind": "previous-local-day issue",
+          "verification": "GitHub REST issue response via connected GitHub fetch",
+          "observedAt": "2026-11-09T14:27:45Z"
+        },
+        {
+          "url": "https://github.com/mattpocock/skills/issues/1402",
+          "apiUrl": "https://api.github.com/repos/mattpocock/skills/issues/1402",
+          "title": "grilling: a confirmation that brings new facts is treated as the end of the session",
+          "createdAt": "2026-11-08T23:13:42Z",
+          "updatedAt": "2026-11-08T23:13:50Z",
+          "state": "open",
+          "comments": 0,
+          "reactions": 0,
+          "summary": "A confirmation included a repository and previous deliverables that changed settled decisions. Reporter requests a new round when confirmation adds constraints or evidence.",
+          "kind": "previous-local-day issue",
+          "verification": "GitHub REST issue response via connected GitHub fetch",
+          "observedAt": "2026-11-09T14:27:45Z"
+        }
+      ],
+      "competitors": [
+        {
+          "repo": "erikhuang76821/code-recall",
+          "sha": "d8fd1dd7d93961f85be310a902e74c4ab28629ef",
+          "committedAt": "2026-09-17T07:05:44Z",
+          "url": "https://github.com/erikhuang76821/code-recall/commit/d8fd1dd7d93961f85be310a902e74c4ab28629ef",
+          "readme": "https://github.com/erikhuang76821/code-recall/blob/d8fd1dd7d93961f85be310a902e74c4ab28629ef/README.md",
+          "observedAt": "2026-11-09T14:27:45Z",
+          "sourceKind": "primary repository README; branch contents read and branch head resolved",
+          "summary": "Local Markdown decision, lesson and task ledgers, CLI, Claude lifecycle hooks, portable instruction-based integration, explicit supersede/expire/archive lifecycle and structural doctor checks.",
+          "overlap": "Local persistence, decision rationale, statuses, stale lifecycle and agent context are already offered.",
+          "proposedDifference": "Focus on active question/answer rounds and revision snapshots of explicitly declared evidence; no claim that a local ledger or stale decision detection is novel."
+        },
+        {
+          "repo": "wooxogh/adr-mcp-setup",
+          "sha": "f2c42dd6d92b60c59897d85fc4fa947f1b30faa9",
+          "committedAt": "2026-03-17T10:49:35Z",
+          "url": "https://github.com/wooxogh/adr-mcp-setup/commit/f2c42dd6d92b60c59897d85fc4fa947f1b30faa9",
+          "readme": "https://github.com/wooxogh/adr-mcp-setup/blob/f2c42dd6d92b60c59897d85fc4fa947f1b30faa9/README.md",
+          "observedAt": "2026-11-09T14:27:45Z",
+          "sourceKind": "primary repository README; branch contents read and branch head resolved",
+          "summary": "Claude-oriented MCP server extracts ADRs from sessions, records status, creates typed decision links and shows dependencies. It checks age of accepted records for stale alerts; AI modes may use an API key.",
+          "overlap": "ADR generation, decision graph, status lifecycle and stale alerts already exist.",
+          "proposedDifference": "Small local interactive question editor with deterministic dependency-revision checks, no generation service; difference is workflow and scope, not a new graph concept."
+        },
+        {
+          "repo": "thomvaill/log4brains",
+          "sha": "37187fc8e0cd615c155eb27d6116e1e05681a918",
+          "committedAt": "2022-09-23T14:00:42Z",
+          "url": "https://github.com/thomvaill/log4brains/commit/37187fc8e0cd615c155eb27d6116e1e05681a918",
+          "readme": "https://github.com/thomvaill/log4brains/blob/37187fc8e0cd615c155eb27d6116e1e05681a918/README.md",
+          "observedAt": "2026-11-09T14:27:45Z",
+          "sourceKind": "primary repository README; branch contents read and branch head resolved",
+          "summary": "Docs-as-code ADR knowledge base with CLI creation, Markdown storage, searchable static website, timeline, local preview and CI publishing.",
+          "overlap": "Searchable local/static decision presentation and documentation lifecycle are established.",
+          "proposedDifference": "Editable active questions with pending evidence and changed-evidence review state. Do not claim first local decision website."
+        },
+        {
+          "repo": "npryce/adr-tools",
+          "sha": "b3279baf9be2207d1a4f4bbd608fd0b591c72aee",
+          "committedAt": "2020-03-30T09:39:50Z",
+          "url": "https://github.com/npryce/adr-tools/commit/b3279baf9be2207d1a4f4bbd608fd0b591c72aee",
+          "readme": "https://github.com/npryce/adr-tools/blob/b3279baf9be2207d1a4f4bbd608fd0b591c72aee/README.md",
+          "observedAt": "2026-11-09T14:27:45Z",
+          "sourceKind": "primary repository README; branch contents read and branch head resolved",
+          "summary": "CLI creates numbered Markdown Architecture Decision Records and supports superseding prior records while updating their status.",
+          "overlap": "Stable decision references, Markdown records and supersession are established.",
+          "proposedDifference": "Operate while questions are still unresolved, keeping question ancestry and explicit evidence-revision acknowledgements."
+        },
+        {
+          "repo": "MSKazemi/scrutable",
+          "sha": "7b0c3d632fd47f91c4384e2ec7e20d871cac969d",
+          "committedAt": "2026-10-31T20:54:35Z",
+          "url": "https://github.com/MSKazemi/scrutable/commit/7b0c3d632fd47f91c4384e2ec7e20d871cac969d",
+          "readme": "https://github.com/MSKazemi/scrutable/blob/7b0c3d632fd47f91c4384e2ec7e20d871cac969d/README.md",
+          "observedAt": "2026-11-09T14:27:45Z",
+          "sourceKind": "primary repository README; branch contents read and branch head resolved",
+          "summary": "Text-first decision framework with structured question/evidence ledgers, stable identities, dependency graphs, state transitions, reopen-on-evidence-change guidance and an optional structural conformance validator. Its README says interactive navigators remain optional future work.",
+          "overlap": "This is the closest conceptual overlap: questions, evidence, dependencies, reopening and validation are already present.",
+          "proposedDifference": "A much smaller immediate interactive tool rather than a broad assurance framework. Do not claim invention of evidence-driven reopening or decision readiness; make purely structural readiness explicit."
+        },
+        {
+          "repo": "SeemSeam/plan-tree",
+          "sha": "b57be82610307fba9a1c266b6e7e2f35dd5b7e33",
+          "committedAt": "2026-08-13T04:44:03Z",
+          "url": "https://github.com/SeemSeam/plan-tree/commit/b57be82610307fba9a1c266b6e7e2f35dd5b7e33",
+          "readme": "https://github.com/SeemSeam/plan-tree/blob/b57be82610307fba9a1c266b6e7e2f35dd5b7e33/README.md",
+          "observedAt": "2026-11-09T14:27:45Z",
+          "sourceKind": "primary repository README; branch contents read and branch head resolved",
+          "summary": "Portable planning skill keeps Markdown planning trees, stable creation IDs, open questions, decisions, evidence and handoff history across sessions.",
+          "overlap": "Question trees, stable IDs and durable planning context already exist.",
+          "proposedDifference": "Editable browser notebook and deterministic revision-based review status with import/export; no provider hook or agent is required."
+        }
+      ],
+      "completeFirstVersion": [
+        "Stable non-reused question IDs and parent relationships",
+        "Validated JSON persistence/import/export and Markdown handoff export",
+        "Editable facts with pending/resolved state and explicit revisions",
+        "Declared prerequisites and deterministic cycle/reference validation",
+        "Acknowledgement snapshots; change to own prompt, referenced fact or prerequisite reopens review",
+        "Clear pending/stale/ready state based only on recorded information",
+        "Keyboard-usable browser UI with explicit save/export behavior",
+        "Runnable synthetic example demonstrating lost-context and changed-fact cases",
+        "Meaningful regression tests for transitive invalidation, pending facts, imports, ID stability and rendering"
+      ],
+      "limits": [
+        "The tool cannot discover undeclared dependencies or verify whether a fact is true.",
+        "It does not parse arbitrary conversations or guarantee that a person understood an answer.",
+        "Readiness is a structural condition within entered data, not approval to execute code or deploy.",
+        "No automatic integration with agent sessions is required for first version.",
+        "Do not claim unique invention of decision ledgers, dependency graphs, or stale-decision detection."
+      ]
+    },
+    {
+      "rank": 2,
+      "id": "glossarymap",
+      "name": "Glossary relationship explorer",
+      "decision": "viable but weaker",
+      "concept": "Import a Markdown glossary, navigate explicit term mentions and backlinks, inspect isolated terms and export a portable interactive map.",
+      "criteria": {
+        "evidenceOfDemand": "One November 8 domain-modeling report says a roughly 100-term glossary lacked relationships and proposes explicitly marked canonical term references.",
+        "distinctValue": "Interactive map and backlinks could make large glossaries easier to explore, but Markdown term linking and generated indexes already exist. The original issue may be adequately solved by a prompt-format change.",
+        "easeOfDemo": "A synthetic commerce glossary demonstrates links and missing targets immediately; drag-and-drop Markdown keeps setup small.",
+        "realisticDiscoverability": "Audience includes domain modeling and documentation authors. It is visually demonstrable but narrower than general planning and already overlaps mature documentation tooling."
+      },
+      "evidence": [
+        {
+          "url": "https://github.com/mattpocock/skills/issues/1396",
+          "apiUrl": "https://api.github.com/repos/mattpocock/skills/issues/1396",
+          "title": "domain-modeling: glossaries on large domains come out light on relationships between terms",
+          "createdAt": "2026-11-08T12:02:54Z",
+          "updatedAt": "2026-11-08T12:03:01Z",
+          "state": "open",
+          "comments": 0,
+          "reactions": 0,
+          "summary": "Reporter says a roughly 100-term glossary lacks expressed relationships and asks for bold canonical term mentions within definitions.",
+          "kind": "previous-local-day issue",
+          "verification": "GitHub REST issue response via connected GitHub fetch",
+          "observedAt": "2026-11-09T14:27:45Z"
+        }
+      ],
+      "competitors": [
+        {
+          "repo": "about-code/glossarify-md",
+          "sha": "246d0b007bf1465d3399593636cba6ce947ce851",
+          "committedAt": "2026-07-05T18:56:03Z",
+          "url": "https://github.com/about-code/glossarify-md/commit/246d0b007bf1465d3399593636cba6ce947ce851",
+          "readme": "https://github.com/about-code/glossarify-md/blob/246d0b007bf1465d3399593636cba6ce947ce851/README.md",
+          "observedAt": "2026-11-09T14:27:45Z",
+          "sourceKind": "primary repository README; branch contents read and branch head resolved",
+          "summary": "Markdown CLI already links terms to glossary definitions, creates mention indexes and lists, supports aliases/synonyms, multiple glossaries and watch mode.",
+          "overlap": "Automatic term cross-linking and navigation already exist.",
+          "proposedDifference": "A local visual map and explicit-reference diagnostics; do not infer relationship semantics merely from bold text."
+        }
+      ],
+      "limits": [
+        "Explicit mentions are not typed semantic relationships.",
+        "No automatically inferred ontology.",
+        "One issue is limited evidence, and a source skill fix may remove the immediate pain."
+      ]
+    },
+    {
+      "rank": 3,
+      "id": "automation-scenario",
+      "name": "Home Assistant automation what-if explorer",
+      "decision": "defer",
+      "concept": "Compare hypothetical automation triggers/entity states and show selected branches and intended actions without affecting devices.",
+      "criteria": {
+        "evidenceOfDemand": "November 8 feature request explicitly asks for side-effect-free scenario comparisons for climate/presence automations. Maintainer closed it as out of scope the same day, highlighting engine semantics.",
+        "distinctValue": "A portable standalone scenario UI would lower setup, but real-runtime Automation Test Kit already advertises dry runs, trace inspection and synthetic triggers. Reimplementing template/wait/service semantics would be less trustworthy.",
+        "easeOfDemo": "An offline synthetic scenario is attractive, but real value requires faithful Home Assistant behavior or a running instance. A tiny supported subset would need visible unknown outcomes.",
+        "realisticDiscoverability": "Home Assistant is an active ecosystem and ha-mcp appears in today's rolling Trending snapshot. Nevertheless, competing real-runtime tooling and high semantic risk make a new independent simulator a poor daily-build choice."
+      },
+      "evidence": [
+        {
+          "url": "https://github.com/homeassistant-ai/ha-mcp/issues/2996",
+          "apiUrl": "https://api.github.com/repos/homeassistant-ai/ha-mcp/issues/2996",
+          "title": "[FEATURE] Provide a side-effect-free automation simulation",
+          "createdAt": "2026-11-08T10:20:52Z",
+          "updatedAt": "2026-11-08T12:37:19Z",
+          "state": "closed",
+          "comments": 1,
+          "reactions": 0,
+          "summary": "Requester wants hypothetical triggers/states to reveal variables, conditions, branches and planned actions without services or notifications.",
+          "kind": "previous-local-day issue",
+          "verification": "GitHub REST issue response via connected GitHub fetch",
+          "observedAt": "2026-11-09T14:27:45Z"
+        },
+        {
+          "url": "https://github.com/homeassistant-ai/ha-mcp/issues/2996#issuecomment-6721577828",
+          "createdAt": "2026-11-08T12:37:18Z",
+          "observedAt": "2026-11-09T14:27:45Z",
+          "kind": "previous-local-day maintainer comment",
+          "summary": "Maintainer rejects hand-reimplementing Home Assistant script semantics in ha-mcp, describes existing condition evaluation and real execution paths, and closes the feature as out of scope.",
+          "verification": "GitHub REST comments response via connected GitHub fetch"
+        }
+      ],
+      "competitors": [
+        {
+          "repo": "N4S4/homeassistant-automation-testkit",
+          "sha": "685f9506c597a3290a9d6cd2b4d8d8c4ed8507a2",
+          "committedAt": "2026-11-06T12:30:43Z",
+          "url": "https://github.com/N4S4/homeassistant-automation-testkit/commit/685f9506c597a3290a9d6cd2b4d8d8c4ed8507a2",
+          "readme": "https://github.com/N4S4/homeassistant-automation-testkit/blob/685f9506c597a3290a9d6cd2b4d8d8c4ed8507a2/README.md",
+          "observedAt": "2026-11-09T14:27:45Z",
+          "sourceKind": "primary repository README; branch contents read and branch head resolved",
+          "summary": "Home Assistant custom integration/panel advertises real traces, synthetic isolated triggers, variable editing and a dry-run that intercepts service calls, driven by Home Assistant's WebSocket API. Requires Home Assistant 2026.9+.",
+          "overlap": "Core requested user-facing simulation and dry-run are already provided by an integration.",
+          "proposedDifference": "A portable offline experience would be easier to try but risks inaccurate semantics; insufficient credible benefit for this build."
+        }
+      ],
+      "limits": [
+        "Do not claim general Home Assistant semantics in a tiny offline implementation.",
+        "Do not execute real device actions for a demo.",
+        "The primary maintainer comment and competitor README are descriptions, not an independent audit of safety."
+      ]
+    }
+  ],
+  "additionalConsidered": {
+    "headroom": {
+      "url": "https://github.com/headroomlabs-ai/headroom/issues/4712",
+      "createdAt": "2026-11-08T21:18:31Z",
+      "summary": "Project memory is keyed by cwd so subdirectories/worktrees split memory. Reporter proposes an opt-in git-common-dir strategy with explicit fallback and migration constraints.",
+      "judgement": "Concrete November 8 problem, but most naturally a scoped upstream fix or compatibility helper; a separate repo-identity visualizer has weaker standalone usefulness and discoverability than the chosen interactive notebook."
+    },
+    "claudeCodeProcessFanout": {
+      "url": "https://github.com/anthropics/claude-code/issues/108238",
+      "createdAt": "2026-11-08T00:31:08Z",
+      "classification": "November 7 Chicago, outside this research window",
+      "judgement": "Do not use this creation event as November 8 evidence. Only a separately verified November 8 comment could qualify as November 8 activity."
+    }
+  },
+  "selectionRationale": "QuestionLedger ties three same-day reports to one coherent, testable workflow with an immediately useful local demo. It has a modest defensible presentation and workflow difference, while acknowledging close existing prior art. Selection does not imply unique technology or guaranteed demand/stars."
+}
